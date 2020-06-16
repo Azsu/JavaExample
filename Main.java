@@ -89,7 +89,7 @@ public class Main {
                     }
                 }
                 if (!Cusip.isEmpty()) {
-                    // Found new CUSIP, save last pair, update current CUSIP and reset price
+                    // Final flush
                     latestCusips.put(Cusip, Price);
                 }
             } catch (IOException e) {
