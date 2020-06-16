@@ -24,7 +24,7 @@ public class Main {
             for (Integer x1 : this.pairOptions) {
                 if (x1 >= sum / 2) {
                     // if we have 2 copies of sum/2 add x1,x1
-                    if (this.pairOptions.indexOf(x1) != this.pairOptions.lastIndexOf(x1)) {
+                    if (x1 + x1 == sum && this.pairOptions.indexOf(x1) != this.pairOptions.lastIndexOf(x1)) {
                         pairs.put(x1, x1);
                     }
                     break;
@@ -115,4 +115,3 @@ public class Main {
         commonPairs.report();
     }
 }
-
